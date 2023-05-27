@@ -102,5 +102,10 @@ namespace SalesWPFApp
                 message.Text = "Please choose an order to update!";
             }
         }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

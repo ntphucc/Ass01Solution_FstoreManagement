@@ -28,12 +28,14 @@ namespace SalesWPFApp
 
         private void btnProfile_Click(object sender, RoutedEventArgs e)
         {
-
+            Profile profile = new Profile(memberId);
+            profile.Show();
         }
 
         private void btnHistory_Click(object sender, RoutedEventArgs e)
         {
-
+            OrderHistory orderHistory = new OrderHistory(memberId);
+            orderHistory.Show();
         }
     }
 }
