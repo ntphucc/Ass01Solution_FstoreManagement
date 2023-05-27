@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessObject.DataAccess;
+using DataAccess.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +21,9 @@ namespace SalesWPFApp
     /// </summary>
     public partial class ManageProduct : Window
     {
+        private readonly IGenericRepository<Product> genericRepository = new GenericRepository<Product>();
+        private readonly IProductRepository productRepository = new ProductRepository();
+        private int CategoryId { get; set; }
         public ManageProduct()
         {
             InitializeComponent();
@@ -52,6 +57,15 @@ namespace SalesWPFApp
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void lvFlowerBouquets_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Product product = (Product)lvFlowerBouquets.SelectedItem;
+            if (product != null)
+            {                
+                CategoryId = product.CategoryId;
+            }
         }
     }
 }

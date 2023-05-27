@@ -3,6 +3,7 @@ using DataAccess.Repositories;
 using SalesWPFApp.ViewModel;
 using System;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace SalesWPFApp
 {
@@ -13,7 +14,7 @@ namespace SalesWPFApp
     {
         private readonly IGenericRepository<Order> genericRepository = new GenericRepository<Order>();
         private readonly IOrderRepository _orderRepository = new OrderRepository();
-        private int MemberId { get; set; }
+        private int? MemberId { get; set; }
         public ManageOrder()
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace SalesWPFApp
 
         private void btnLoad_Click(object sender, RoutedEventArgs e)
         {
-
+            LoadOrders();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -106,6 +107,18 @@ namespace SalesWPFApp
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void lvOrders_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Order order = lvOrders.SelectedItem as Order;
+            if (order != null)
+            {
+                IGenericRepository<Member> memberRepository = new GenericRepository<Member>();
+                MemberId = order.MemberId;
+                var customer = memberRepository.GetById(MemberId);
+                txtName.Text = customer.CompanyName;
+            }
         }
     }
 }

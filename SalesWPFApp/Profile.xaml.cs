@@ -30,7 +30,7 @@ namespace SalesWPFApp
             txtPassword.Text = customer.Password.ToString();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void ProfileWindow_Loaded(object sender, RoutedEventArgs e)
         {
             LoadMember();
         }
