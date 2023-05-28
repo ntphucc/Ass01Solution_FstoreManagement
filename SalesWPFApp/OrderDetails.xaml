@@ -63,7 +63,7 @@
                              Margin="0,5,0,0" Background="Transparent"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Vertical" Margin="50,0,0,0">
-                                    <TextBlock Width="300" Text="Total" Foreground="DarkGray" FontSize="12" 
+                                    <TextBlock Width="300" Text="Required Date" Foreground="DarkGray" FontSize="12" 
                                FontWeight="Medium" FontFamily="Montserrat" Margin="0,30,0,0"/>
                                     <TextBox x:Name="txtTotal" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
                              Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
@@ -71,7 +71,7 @@
                              Margin="0,5,0,0" Background="Transparent" IsReadOnly="True"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Vertical" Margin="50,0,0,0">
-                                    <TextBlock Width="300" Text="Order Status" Foreground="DarkGray" FontSize="12" 
+                                    <TextBlock Width="300" Text="Freight" Foreground="DarkGray" FontSize="12" 
                                FontWeight="Medium" FontFamily="Montserrat" Margin="0,30,0,0"/>
                                     <TextBox x:Name="txtStatus" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
                              Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"

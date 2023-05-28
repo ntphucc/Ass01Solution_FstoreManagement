@@ -39,7 +39,7 @@
                              DataContext="{Binding ElementName=lvOrders, Path=SelectedItem}"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="10,0,0,0">
-                                    <TextBlock Width="300" Text="Customer Name" Foreground="DarkGray" FontSize="12" 
+                                    <TextBlock Width="300" Text="Member ID" Foreground="DarkGray" FontSize="12" 
                                FontWeight="Medium" FontFamily="Montserrat" Margin="0,30,0,0"/>
                                     <TextBox x:Name="txtName" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
                              Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
@@ -69,23 +69,23 @@
                              DataContext="{Binding ElementName=lvOrders, Path=SelectedItem}"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Vertical" Margin="50,0,0,0">
-                                    <TextBlock Width="300" Text="Total" Foreground="DarkGray" FontSize="12" 
+                                    <TextBlock Width="300" Text="Required Date" Foreground="DarkGray" FontSize="12" 
                                FontWeight="Medium" FontFamily="Montserrat" Margin="0,30,0,0"/>
                                     <TextBox x:Name="txTotal" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
                              Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2" Width="300" Height="28" VerticalContentAlignment="Center"
                              Margin="0,5,0,0" Background="Transparent" IsReadOnly="True"
-                             Text="{Binding Path=Total, Mode=OneWay}" 
+                             Text="{Binding Path=RequiredDate, Mode=OneWay}" 
                              DataContext="{Binding ElementName=lvOrders, Path=SelectedItem}"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Vertical" Margin="50,0,0,0">
-                                    <TextBlock Width="300" Text="Order Status" Foreground="DarkGray" FontSize="12" 
+                                    <TextBlock Width="300" Text="Freight" Foreground="DarkGray" FontSize="12" 
                                FontWeight="Medium" FontFamily="Montserrat" Margin="0,30,0,0"/>
                                     <TextBox x:Name="txtStatus" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
                              Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2" Width="300" Height="28" VerticalContentAlignment="Center"
                              Margin="0,5,0,0" Background="Transparent" IsReadOnly="True"
-                             Text="{Binding Path=OrderStatus, Mode=OneWay}" 
+                             Text="{Binding Path=Freight, Mode=OneWay}" 
                              DataContext="{Binding ElementName=lvOrders, Path=SelectedItem}"/>
                                 </StackPanel>
                             </StackPanel>

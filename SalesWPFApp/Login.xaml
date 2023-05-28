@@ -29,14 +29,14 @@
                         <TextBlock Width="300" Text="Email" Foreground="DarkGray" FontSize="12" 
                                FontWeight="Medium" FontFamily="Montserrat" Margin="0,35,0,0"/>
                         <TextBox x:Name="txtEmail" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
-                             Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
+                             Foreground="Black" CaretBrush="LightGray" BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2" Width="300" Height="28" VerticalContentAlignment="Center"
                              Margin="0,5,0,0" Padding="20,0,0,0">
                         </TextBox>
                         <TextBlock Width="300" Text="Password" Foreground="DarkGray" FontSize="12" 
                                FontWeight="Medium" FontFamily="Montserrat" Margin="0,15,0,0"/>
                         <PasswordBox x:Name="txtPassword" FontSize="13" FontWeight="Medium"
-                             FontFamily="Montserrat" Foreground="White" CaretBrush="LightGray"
+                             FontFamily="Montserrat" Foreground="Black" CaretBrush="LightGray"
                              BorderBrush="DarkGray" BorderThickness="0,0,0,2"
                              Height="28" Width="300" VerticalContentAlignment="Center"
                              Margin="0,5,0,0" Padding="20,0,0,0">

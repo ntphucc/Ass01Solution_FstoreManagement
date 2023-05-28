@@ -200,8 +200,6 @@
                                                 DisplayMemberBinding="{Binding Country}"/>
                                     <GridViewColumn Header="Password" Width="50"
                                                 DisplayMemberBinding="{Binding Password}"/>
-                                    <GridViewColumn Header="Birthday" Width="100"
-                                                DisplayMemberBinding="{Binding Birthday}"/>
                                 </GridView>
                             </ListView.View>
                         </ListView>
