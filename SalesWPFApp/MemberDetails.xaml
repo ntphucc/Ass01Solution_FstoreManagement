@@ -77,14 +77,6 @@
                              BorderThickness="0,0,0,2" Width="300" Height="28" VerticalContentAlignment="Center"
                              Margin="0,5,0,0" Background="Transparent" />
                             </StackPanel>
-                            <StackPanel Orientation="Vertical" Margin="50,0,0,0">
-                                <TextBlock Width="300" Text="Birthday" Foreground="DarkGray" FontSize="12" 
-                               FontWeight="Medium" FontFamily="Montserrat" Margin="0,30,0,0"/>
-                                <TextBox x:Name="txtBirthday" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
-                             Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                             BorderThickness="0,0,0,2" Width="300" Height="28" VerticalContentAlignment="Center"
-                             Margin="0,5,0,0" Background="Transparent" />
-                            </StackPanel>
                         </StackPanel>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">

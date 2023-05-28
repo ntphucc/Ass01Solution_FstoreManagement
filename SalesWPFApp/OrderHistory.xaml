@@ -31,16 +31,16 @@
                                 <GridView>
                                     <GridViewColumn Header="Order ID" Width="100" 
                                                 DisplayMemberBinding="{Binding OrderId}"/>
-                                    <GridViewColumn Header="Customer ID" Width="100"
-                                                DisplayMemberBinding="{Binding CustomerId}"/>
+                                    <GridViewColumn Header="Member ID" Width="100"
+                                                DisplayMemberBinding="{Binding MemberId}"/>
                                     <GridViewColumn Header="Order Date" Width="250"
                                                 DisplayMemberBinding="{Binding OrderDate}"/>
-                                    <GridViewColumn Header="Shipped Date" Width="250"
+                                    <GridViewColumn Header="Required Date" Width="250"
+                                                DisplayMemberBinding="{Binding RequiredDate}"/>
+                                    <GridViewColumn Header="Shipped Date" Width="100"
                                                 DisplayMemberBinding="{Binding ShippedDate}"/>
-                                    <GridViewColumn Header="Total" Width="100"
-                                                DisplayMemberBinding="{Binding Total}"/>
-                                    <GridViewColumn Header="Status" Width="100"
-                                                DisplayMemberBinding="{Binding OrderStatus}"/>
+                                    <GridViewColumn Header="Freight" Width="100"
+                                                DisplayMemberBinding="{Binding Freight}"/>
                                 </GridView>
                             </ListView.View>
                         </ListView>

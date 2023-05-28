@@ -106,7 +106,18 @@ namespace SalesWPFApp
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-
+            txtName.Text = string.Empty;
+            if (txtSearch.Text.Length > 0)
+            {
+                try
+                {
+                    lvOrders.ItemsSource = _orderRepository.SearchByMemberID(Int32.Parse(txtSearch.Text));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Search Order");
+                }
+            }
         }
 
         private void lvOrders_SelectionChanged(object sender, SelectionChangedEventArgs e)
