@@ -234,22 +234,18 @@
                         <ListView x:Name="lvFlowerBouquets" Margin="0,10,0,0" SelectionChanged="lvFlowerBouquets_SelectionChanged">
                             <ListView.View>
                                 <GridView>
-                                    <GridViewColumn Header="Flower Bouquet ID" Width="50" 
-                                                DisplayMemberBinding="{Binding FlowerBouquetId}"/>
-                                    <GridViewColumn Header="Flower Bouquet Name" Width="150"
-                                                DisplayMemberBinding="{Binding FlowerBouquetName}"/>
-                                    <GridViewColumn Header="Description" Width="350"
-                                                DisplayMemberBinding="{Binding Description}"/>
+                                    <GridViewColumn Header="Product ID" Width="50" 
+                                                DisplayMemberBinding="{Binding ProductId}"/>
+                                    <GridViewColumn Header="Product Name" Width="150"
+                                                DisplayMemberBinding="{Binding ProductName}"/>
+                                    <GridViewColumn Header="Weight" Width="350"
+                                                DisplayMemberBinding="{Binding Weight}"/>
                                     <GridViewColumn Header="Unit Price" Width="100"
                                                 DisplayMemberBinding="{Binding UnitPrice}"/>
                                     <GridViewColumn Header="Units In Stock" Width="50"
-                                                DisplayMemberBinding="{Binding UnitsInStock}"/>
+                                                DisplayMemberBinding="{Binding UnitslnStock}"/>
                                     <GridViewColumn Header="Category ID" Width="50"
                                                 DisplayMemberBinding="{Binding CategoryId}"/>
-                                    <GridViewColumn Header="Supplier ID" Width="100"
-                                                DisplayMemberBinding="{Binding SupplierId}"/>
-                                    <GridViewColumn Header="Status" Width="50"
-                                                DisplayMemberBinding="{Binding FlowerBouquetStatus}"/>
                                 </GridView>
                             </ListView.View>
                         </ListView>
