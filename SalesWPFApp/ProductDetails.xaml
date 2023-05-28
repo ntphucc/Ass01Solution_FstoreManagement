@@ -23,7 +23,7 @@
             </Border.Background>
             <Grid>
                 <StackPanel Orientation="Vertical" Margin="0,10,0,0">
-                    <TextBlock Text="Flower Bouquet Details" Foreground="White" FontSize="25" 
+                    <TextBlock Text="Product Details" Foreground="White" FontSize="25" 
                                FontWeight="Medium" FontFamily="Montserrat" HorizontalAlignment="Center"/>
                     <StackPanel Orientation="Horizontal" Width="800">
                         <StackPanel Width="400">

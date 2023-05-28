@@ -24,12 +24,12 @@
             <Grid>
                 <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
                     <StackPanel Orientation="Vertical" Margin="0,10,0,0">
-                        <TextBlock Text="Customer Management" Foreground="White" FontSize="25" 
+                        <TextBlock Text="Member Management" Foreground="White" FontSize="25" 
                                FontWeight="Medium" FontFamily="Montserrat" HorizontalAlignment="Center"/>
                         <StackPanel Orientation="Horizontal" Width="800">
                             <StackPanel Width="400">
                                 <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="10,0,0,0">
-                                    <TextBlock Width="300" Text="Customer Id" Foreground="DarkGray" FontSize="12" 
+                                    <TextBlock Width="300" Text="Member Id" Foreground="DarkGray" FontSize="12" 
                                FontWeight="Medium" FontFamily="Montserrat" Margin="0,10,0,0"/>
                                     <TextBox x:Name="txtId" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
                              Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
@@ -49,7 +49,7 @@
                              DataContext="{Binding ElementName=lvCustomers, Path=SelectedItem}"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="10,0,0,0">
-                                    <TextBlock Width="300" Text="Customer Name" Foreground="DarkGray" FontSize="12" 
+                                    <TextBlock Width="300" Text="Company Name" Foreground="DarkGray" FontSize="12" 
                                FontWeight="Medium" FontFamily="Montserrat" Margin="0,30,0,0"/>
                                     <TextBox x:Name="txtName" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
                              Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
@@ -90,16 +90,7 @@
                              Text="{Binding Path=Password, Mode=OneWay}" 
                              DataContext="{Binding ElementName=lvCustomers, Path=SelectedItem}"/>
                                 </StackPanel>
-                                <StackPanel Orientation="Vertical" Margin="50,0,0,0">
-                                    <TextBlock Width="300" Text="Birthday" Foreground="DarkGray" FontSize="12" 
-                               FontWeight="Medium" FontFamily="Montserrat" Margin="0,30,0,0"/>
-                                    <TextBox x:Name="txtBirthday" FontSize="13" FontWeight="Medium" FontFamily="Montserrat"                            
-                             Foreground="White" CaretBrush="LightGray" BorderBrush="DarkGray"
-                             BorderThickness="0,0,0,2" Width="300" Height="28" VerticalContentAlignment="Center"
-                             Margin="0,5,0,0" Background="Transparent" IsReadOnly="True"
-                             Text="{Binding Path=Birthday, Mode=OneWay}" 
-                             DataContext="{Binding ElementName=lvCustomers, Path=SelectedItem}"/>
-                                </StackPanel>
+                                
                             </StackPanel>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">

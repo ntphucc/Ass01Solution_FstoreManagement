@@ -27,7 +27,7 @@
                         <TextBlock Text="Admin Options" Foreground="White" FontSize="25" 
                                FontWeight="Medium" FontFamily="Montserrat" HorizontalAlignment="Center"/>
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
-                            <Button x:Name="btnCustomer" BorderThickness="0" Content="Customer Management" Foreground="White"
+                            <Button x:Name="btnCustomer" BorderThickness="0" Content="Member Management" Foreground="White"
                             FontSize="12" FontFamily="Montserrat" Cursor="Hand" Margin="0,50,0,0"
                                 Click="btnCustomer_Click">
                                 <Button.Style>
